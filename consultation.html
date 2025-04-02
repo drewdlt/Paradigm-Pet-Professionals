@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Consultations | Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="img/favicon.png" alt="Company Logo" class="logo"></a>
+                <a href="index.html" class="company-name hideOnMobileSmall">
+                <span>Paradigm</span>
+                <span>Pet</span>
+                <span>Professionals</span>
+                </a>
+            </div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img id='sidebar-closer' src="img/close_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="cats.html" class="nav-link">Cats</a></li>
+                <li><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li><a href="birds.html" class="nav-link">Birds</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link" id="active">Consultations</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="cats.html" class="nav-link">Cats</a></li>
+                <li class="hideOnMobile"><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li class="hideOnMobile"><a href="birds.html" class="nav-link">Birds</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="nav-link">About</a></li>
+                <li class="hideOnMobile"><a href="#" class="nav-link" id="active">Consultations</a></li>
+            </ul>
+            <input type="search" name="search-btn" id="search-btn" placeholder="Search">
+            <a onclick=showSideBar() href="#"><img class='sidebar-toggle' src="img/menu_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Toggle Sidebar"></a>
+        </nav>
+        <main id="consultation-background">
+            <div id="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <span>Consultations</span>
+            </div>
+            <div id="consultation-card">
+                <div id="form-heading">
+                    Consultations
+                </div>
+                <form action="" method="post">
+                    <fieldset>                       
+                        <legend>Owner</legend>
+                        <div class="owner-info">
+                            <div class="name-container">
+                                <label for="first-name"><img src="img/person_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="User logo" class="form-icon"></label>
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                            </div>
+                            <div class="phone-container">
+                                <label for="phone-num"><img src="img/call_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="form-icon"></label>
+                                <input type="tel" name="phone-num" id="phone-num" placeholder="(555) 555 - 5555">
+                            </div>
+                            <div class="email-container">
+                                <label for="email"><img src="img/mail_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="form-icon"></label>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="time-zone-container">
+                                <label for="time-zone"><img src="img/schedule_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="form-icon"></label>
+                                <select name="time-zone" id="time-zone">
+                                    <option value="">Time Zone</option>
+                                    <option value="ET">Eastern Time</option>
+                                    <option value="MT">Mountain Time</option>
+                                    <option value="PST">Pacific Standard Time</option>
+                                    <option value="AST">Alaska Standard Time</option>
+                                    <option value="HST">Hawaii-Aleutain Standard Time</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pet</legend>
+                        <div class="pet-info">
+                            <div class="name-container">
+                                <label for="pet-name"><img src="img/pets_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="form-icon"></label>
+                                <input type="text" name="pet-name" id="pet-name" placeholder="Pet Name">
+                            </div>
+                            <div class="pet-type-container">
+                                <label for="pet-type"><img src="img/sound_detection_dog_barking_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="form-icon"></label>
+                                <select name="pet-type" id="pet-type">
+                                    <option value="">Type of Pet</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="bird">Bird</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="pet-age-container">
+                                <label for="pet-age"><img src="img/heart_check_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="form-icon"></label>
+                                <input type="number" name="pet-age" id="pet-age" placeholder="Age">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Submit" id="submit-btn">
+                </form>
+            </div>
+        </main>
+        <footer id="consultation-footer">
+            <div class="logo-container">
+                <img src="img/favicon.png" alt="Company Logo" class="logo">
+                <div class="footer-title">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <span>Navigation</span>
+                <a href="index.html">Home</a>
+                <a href="cats.html">Cats</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-forms">
+                <span>Forms</span>
+                <a href="#">Consultations</a>
+            </div>
+        </footer>
+        <script>
+            function showSideBar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
