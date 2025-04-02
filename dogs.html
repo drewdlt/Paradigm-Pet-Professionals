@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Dogs | Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="img/favicon.png" alt="Company Logo" class="logo"></a>
+                <a href="index.html" class="company-name hideOnMobileSmall">
+                <span>Paradigm</span>
+                <span>Pet</span>
+                <span>Professionals</span>
+                </a>
+            </div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img  id='sidebar-closer' src="img/close_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="cats.html" class="nav-link">Cats</a></li>
+                <li><a href="#" class="nav-link" id="active">Dogs</a></li>
+                <li><a href="birds.html" class="nav-link">Birds</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="cats.html" class="nav-link">Cats</a></li>
+                <li class="hideOnMobile"><a href="#" class="nav-link" id="active">Dogs</a></li>
+                <li class="hideOnMobile"><a href="birds.html" class="nav-link">Birds</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="nav-link">About</a></li>
+                <li class="hideOnMobile"><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <input type="search" name="search-btn" id="search-btn" placeholder="Search">
+            <a onclick=showSideBar() href="#"><img class='sidebar-toggle' src="img/menu_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Toggle Sidebar"></a>
+        </nav>
+        <main>
+            <div id="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <span>Dogs</span>
+            </div>
+            <section id="dog-hero" class="hero-container">
+                <div class="hero-title">
+                    Dogs
+                </div>
+            </section>
+            <section class="content-container">
+                <div id="hero-description" class="text-container center-container">
+                    <span class="normal-text">
+                        The domestic dog is an extremely social animal and offers a diverse variety of choices
+                        as there are well over 300 breeds recognized by the World Canine Organization. Adopting a
+                        dog offers mutual benefits between dog and owner. Many studies cite the social benefits of
+                        having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies
+                        even show medical indicators such as
+                        <a href="https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.119.005554" target="_blank">reduced blood pressure and improved lipid profiles.</a>
+                        If you have a dog, it is important to make sure that you care for your dog; be mindful of what you
+                        feed your dog and provide enough opportunities for exercise. 
+                        <span class="bold">In this page, you will find more information about how to care for your pets throughout the various stages of their lives.</span>
+                    </span>
+                </div>
+            </section>
+            <section id="diet-and-excercise-container" class="content-container">
+                <div class="blue-border-heading heading-text">
+                    Diet & Excercise
+                </div>
+                <div class="normal-text text-container">
+                    Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should
+                    be nursed the first two months, then introduced to three meals per day when they are about three to six
+                    months years old. Their food intake should be reduced to two meals per day when they are six months to
+                    one year old and finally reduced to one meal after they reach one year old. And a dog’s typical body mass
+                    is composed of somewhere between 60 and 70 percent water. The <a href="https://www.aspca.org/pet-care/dog-care/dog-nutrition-tips" target="_blank">ASPCA</a> says just a 10 percent decrease in body
+                    water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated!
+                </div>
+                <div class="normal-text text-container">
+                    Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as well as sun and
+                    fresh air. The minimum recommended time for exercise varies greatly with breed and size differences, but generally 
+                    <span class="bold">
+                        a range of 30–120 minutes of exercise is recommended per day! 
+                    </span>
+                    Can you imagine exercising two hours per day? OK, I know that wouldn't bother some of you reading this. But the thought of it to me 
+                    makes me cringe! And by the way, exercising your dog does not mean you are being challenged to a push-up contest. Brisk walks are OK
+                    too! 
+                    <span class="bold">
+                        You can also choose from a variety of toys to encourage physical activity; just be sure they are age appropriate and do not pose a choking hazard.
+                    </span>
+                    Pay careful attention to toys that require supervision.
+                </div>
+                <div id="toy-container">
+                    <img src="img/dog-toy-1.png" alt="Red Bone">
+                    <img src="img/dog-toy-2.png" alt="Green Dog Toy">
+                    <img src="img/dog-toy-3.png" alt="Orange Ball">
+                </div>
+            </section>
+            <section id="grooming-and-handling-container" class="content-container">
+                <div class="blue-border-heading heading-text">
+                    Grooming & Handling
+                </div>
+                <div class="main-content">
+                    <img src="img/dog-grooming.png" alt="Dog Grooming">
+                    <div class="normal-text text-container">
+                        Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of
+                        shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as
+                        ticks and fleas, especially after visiting heavily wooded areas.
+                        <span class="bold">
+                            Bathing is not only important to your dog’s health but can be an exercise depending on how strong willed the dog is. 
+                        </span>
+                        Rinse all of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful
+                        how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a
+                        small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach
+                        under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.
+                    </div>
+                </div>
+            </section>
+            <section id="vaccination-container" class="content-container">
+                <div class="blue-border-heading heading-text">
+                    Vaccination and Medication
+                </div>
+                <div class="center-container text-container">
+                    <span class="normal-text">
+                        You should always consult with your veterinarian, but there is a core set of vaccines that are typically recommended.
+                        Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by
+                        your vet depending on the environment in which the dog resides. Some of these include 
+                        <a href="https://www.aspca.org/pet-care/general-pet-care/vaccinations-your-pet" target="_blank">Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.</a>
+                    </span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo-container">
+                <img src="img/favicon.png" alt="Company Logo" class="logo">
+                <div class="footer-title">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <span>Navigation</span>
+                <a href="index.html">Home</a>
+                <a href="cats.html">Cats</a>
+                <a href="#">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-forms">
+                <span>Forms</span>
+                <a href="consultation.html">Consultations</a>
+            </div>
+        </footer>
+        <script>
+            function showSideBar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+                function hideSidebar() {
+                    sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'none';
+                }
+        </script>
+    </body>
+</html>
