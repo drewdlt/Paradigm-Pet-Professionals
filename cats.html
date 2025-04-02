@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Cats | Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="img/favicon.png" alt="Company Logo" class="logo"></a>
+                <a href="index.html" class="company-name hideOnMobileSmall">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </a>
+            </div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img  id='sidebar-closer' src="img/close_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="#" class="nav-link" id="active">Cats</a></li>
+                <li><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li><a href="birds.html" class="nav-link">Birds</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#" class="nav-link" id="active">Cats</a></li>
+                <li class="hideOnMobile"><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li class="hideOnMobile"><a href="birds.html" class="nav-link">Birds</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="nav-link">About</a></li>
+                <li class="hideOnMobile"><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <input type="search" name="search-btn" id="search-btn" placeholder="Search">
+            <a onclick=showSideBar() href="#"><img class='sidebar-toggle' src="img/menu_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Toggle Sidebar"></a>
+        </nav>
+        <main>
+            <div id="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <span>Cats</span>
+            </div>
+            <section id="cat-hero" class="hero-container">
+                <div class="cat-hero-text-container">
+                    <div class="heading-text">
+                        Cats
+                    </div>
+                    <span>
+                    Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most
+                    popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and
+                    diet can differ between breeds.
+                    </span>
+                    <span>
+                    However, some diets and practices are generally recommended for the well-being
+                    of your fluffy family member regardless of breed.
+                    </span>
+                </div>
+            </section>
+            <section class="card-container">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Zero to Four Weeks</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="img/cat-card-1.png" alt="Kitten" class="card-image">
+                    </div>
+                    <div class="card-info">
+                        <div><span class="bold">It is important the queen</span> (a term commonly used for a female cat that is either pregnant or nursing) 
+                        <span class="bold">directly nurse her young if possible</span>. Monitor your kitten’s growth closely to make sure its growth rate is
+                        progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the
+                        kitten directly either with a bottle or a feeding tube.</div> 
+                        <div>Some reasons why kittens might not gain weight appropriately include the following:
+                            <ul>
+                                <li>Too many other siblings are competing for mom's milk</li>
+                                <li>Gastrointestinal disease</li>
+                                <li>Environmental conditions such as extreme heat or cold, unsanitary conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Four Weeks to One Year</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="img/cat-card-2.png" alt="Kitten" class="card-image">
+                    </div>
+                    <div class="card-info">
+                        <div>Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth.
+                            According to the <a href="https://www.aspca.org/pet-care/cat-care/cat-nutrition-tips" target="_blank">ASPCA</a>, kittens at this age should eat <span class="bold">half to one cup of dry kitten food or six to nine ounces
+                            of wet kitten food per day</span>. If your kitten has difficulties eating hard food, a small amount of water can be
+                            added to soften the food.
+                        </div>
+                        <div>Cat food that is optimized for kittens provides the additional nutrients that are
+                            needed for growth, energy, and wellness. Depending on the breed, your cat may have different dietary requirements.
+                            You should always consult with your veterinarian for recommendations.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">One Year to Seven Years</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="img/cat-card-3.png" alt="Kitten" class="card-image">
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            This age is when kittens reach the cat stage and do not need as many nutrients.
+                            At this age, their level of activity decreases, and so does their metabolism. It
+                            is not recommended to leave food out for the cats all day. Instead, <span class="bold">provide food a
+                            couple times a day so they eat meals rather than snacking throughout the day</span>. This
+                            practice reduces the risk of obesity and other weight-related feline ailments.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Seven Years and More</span>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="img/cat-card-4.png" alt="Kitten" class="card-image">
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            Much like many living organisms, the body begins to deteriorate and experience a lot of changes. <span class="bold">Cats
+                            at this age should eat less fats and calories and more quality proteins</span>. This means when you are purchasing
+                            packaged foods for your cat, <span class="bold">look for food that states a particular protein (such as "salmon")</span> and not just
+                            a category (such as fish). This usually means they are byproducts, or combinations, of lesser quality proteins.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo-container">
+                <img src="img/favicon.png" alt="Company Logo" class="logo">
+                <div class="footer-title">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <span>Navigation</span>
+                <a href="index.html">Home</a>
+                <a href="#">Cats</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-forms">
+                <span>Forms</span>
+                <a href="consultation.html">Consultations</a>
+            </div>
+        </footer>
+        <script>
+            function showSideBar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
