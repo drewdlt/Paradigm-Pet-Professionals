@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-container">
+                <a href="#"><img src="img/favicon.png" alt="Company Logo" class="logo"></a>
+                <a href="#" class="company-name hideOnMobileSmall">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </a>
+            </div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img  id='sidebar-closer' src="img/close_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="cats.html" class="nav-link">Cats</a></li>
+                <li><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li><a href="birds.html" class="nav-link">Birds</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="cats.html" class="nav-link">Cats</a></li>
+                <li class="hideOnMobile"><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li class="hideOnMobile"><a href="birds.html" class="nav-link">Birds</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="nav-link">About</a></li>
+                <li class="hideOnMobile"><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <input type="search" name="search-btn" id="search-btn" placeholder="Search">
+            <a onclick=showSideBar() href="#"><img class='sidebar-toggle' src="img/menu_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Toggle Sidebar"></a>
+        </nav>
+        <main>
+            <section class="content-container">
+                <div class="text-container left-container">
+                    <span class="normal-text">Looking for basic pet care advice for the most common type of pets?
+                    Need additional help determining which type of pet is right for you and your family?<br><br>
+                    We will work with you and provide tailored evidence-based pet care to ensure lifelong health
+                    and wellness of your new companion.</span>
+                    <button><a href="consultation.html">Consultations</a></button>
+                </div>
+                <div class="img-container right-container">
+                    <img src="img/Picture1.jpg" alt="Cat Photo">
+                </div>
+            </section>
+            <section class="content-container">
+                <div class="text-container left-container">
+                    <span class="heading-text">Pets are nature's gift to humanity.</span>
+                </div>
+                <div class="text-container right-container">
+                    <span class="normal-text">
+                        It has been scientifically proven that opening our homes and hearts to a pet
+                        increases our longevity and improves our overall quality of life as well as
+                        the lives of our pets. At Pet Paradigm Professionals, our mission is to offer
+                        resources to help you care for your furry, scaly, feathery, and slimy loved
+                        ones. <br><br>Our pet experts—or “Pexperts”—have been working with pet owners and professionals
+                        alike for the past twelve years. They offer one-on-one consultations with current and
+                        prospective pet owners as well as group presentations designed for veterinary,
+                        pet shelter, and pet breeding professionals.
+                    </span>
+                </div>
+            </section>
+            <section class="content-container">
+                <div class="text-container left-container">
+                    <span class="normal-text">
+                        Looking for basic pet care advice for the most common type of pets?<br><br>
+                        Need additional help determining which type of pet is right for you and your family?<br><br>
+                        We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
+                    </span>
+                </div>
+                <div class="img-container right-container">
+                    <img src="img/Picture2.jpg" alt="Addressing Client">
+                </div>
+            </section>
+            <section class="content-container additional-resources-container">
+                <div class="heading-text">
+                    Looking for your new best friend?
+                </div>
+                <span class="normal-text">
+                    The following organizations can help you find and adopt the perfect companion:
+                </span>
+                <div id="alt-organizations">
+                    <a href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resource" target="_blank"><img src="img/NP_Blk_Stacked.png" alt="General Pet Resources" class="alt-org-logo"></a>
+                    <a href="https://www.aspca.org/ " target="_blank"><img src="img/ASPCA-logo.png" alt="ASPCA" class="alt-org-logo"></a>
+                    <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank"><img src="img/Sterling-Photoroom.png" alt="Fish Rescue" class="alt-org-logo"></a>
+                    <a href="https://savethesnakes.org/snakerescuecall/" target="_blank"><img src="img/Snake.png" alt="Snake Rescue" class="alt-org-logo"></a>
+                    <a href="https://ftlob.rescuegroups.org/" target="_blank"><img src="img/bird-Photoroom.png" alt="Bird Rescue" class="alt-org-logo"></a>
+                </div>
+            </section>
+            <section class="content-container">
+                <div class="img-container left-container">
+                    <img src="img/animalCare.png" alt="Animal care">
+                </div>
+                <div class="text-container right-container">
+                    <span class="normal-text">
+                    We are also happy to help you navigate the adoption process! We will guide you through each step in the process
+                    from determining which type of pet is best suited for your family and home environment, to completing the
+                    necessary paperwork, to bringing your new loved one home.<br><br>
+                    Please fill out our contact form to request a consultation.
+                    We will contact you within 48 hours to schedule a consultation. All fields are required.
+                    </span>
+                    <button><a href="consultation.html">Consultations</a></button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo-container">
+                <img src="img/favicon.png" alt="Company Logo" class="logo">
+                <div class="footer-title">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <span>Navigation</span>
+                <a href="#">Home</a>
+                <a href="cats.html">Cats</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-forms">
+                <span>Forms</span>
+                <a href="consultation.html">Consultations</a>
+            </div>
+        </footer>
+        <script>
+            function showSideBar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
