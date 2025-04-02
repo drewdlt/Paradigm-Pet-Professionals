@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>About | Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="img/favicon.png" alt="Company Logo" class="logo"></a>
+                <a href="index.html" class="company-name hideOnMobileSmall">
+                <span>Paradigm</span>
+                <span>Pet</span>
+                <span>Professionals</span>
+                </a>
+            </div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img id='sidebar-closer' src="img/close_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="cats.html" class="nav-link">Cats</a></li>
+                <li><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li><a href="birds.html" class="nav-link">Birds</a></li>
+                <li><a href="#" class="nav-link" id="active">About</a></li>
+                <li><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="cats.html" class="nav-link">Cats</a></li>
+                <li class="hideOnMobile"><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li class="hideOnMobile"><a href="birds.html" class="nav-link">Birds</a></li>
+                <li class="hideOnMobile"><a href="#" class="nav-link" id="active">About</a></li>
+                <li class="hideOnMobile"><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <input type="search" name="search-btn" id="search-btn" placeholder="Search">
+            <a onclick=showSideBar() href="#"><img class='sidebar-toggle' src="img/menu_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Toggle Sidebar"></a>
+        </nav>
+        <main>
+            <div id="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <span>About</span>
+            </div>
+            <div id='about-hero'class="hero-container">
+                <div id="slogan">
+                    Evidence-based pet care advice<br>
+                    for every pet lover
+                </div>
+                <div id="values">
+                    Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and 
+                    nutrition, and customer recognition for outstanding support
+                </div>
+            </div>
+            <div class="content-container column-display">
+                <div id="service-heading" class="heading-text">
+                    Services
+                </div>
+                <div class="services-container">
+                    <div class="service">
+                        <img class="service-icon" src="img/video_call_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="video icon">
+                        <span class="normal-text">
+                            Virtual consultations and presentations
+                        </span>
+                    </div>
+                    <div class="service">
+                        <img class="service-icon" src="img/forum_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="forum icon">
+                        <span class="normal-text">
+                            One-on-one consultations concerning individual pets
+                        </span>
+                    </div>
+                    <div class="service">
+                        <img class="service-icon" src="img/groups_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="group icon">
+                        <span class="normal-text">
+                            Group presentations regarding general pet care (can be tailored to the needs of the group)
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="logo-container">
+                <img src="img/favicon.png" alt="Company Logo" class="logo">
+                <div class="footer-title">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <span>Navigation</span>
+                <a href="index.html">Home</a>
+                <a href="cats.html">Cats</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="#">About Us</a>
+            </div>
+            <div class="footer-forms">
+                <span>Forms</span>
+                <a href="consultation.html">Consultations</a>
+            </div>
+        </footer>
+        <script>
+            function showSideBar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+                function hideSidebar() {
+                    sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'none';
+                }
+        </script>
+    </body>
+</html>
