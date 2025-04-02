@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Birds | Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="img/favicon.png" alt="Company Logo" class="logo"></a>
+                <a href="index.html" class="company-name hideOnMobileSmall">
+                <span>Paradigm</span>
+                <span>Pet</span>
+                <span>Professionals</span>
+                </a>
+            </div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img  id='sidebar-closer' src="img/close_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="cats.html" class="nav-link">Cats</a></li>
+                <li><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li><a href="#" class="nav-link" id="active">Birds</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="cats.html" class="nav-link">Cats</a></li>
+                <li class="hideOnMobile"><a href="dogs.html" class="nav-link">Dogs</a></li>
+                <li class="hideOnMobile"><a href="#" class="nav-link" id="active">Birds</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="nav-link">About</a></li>
+                <li class="hideOnMobile"><a href="consultation.html" class="nav-link">Consultations</a></li>
+            </ul>
+            <input type="search" name="search-btn" id="search-btn" placeholder="Search">
+            <a onclick=showSideBar() href="#"><img class='sidebar-toggle' src="img/menu_26dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Toggle Sidebar"></a>
+        </nav>
+        <main>
+            <div id="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <span>Birds</span>
+            </div>
+            <div id="bird-hero" class="hero-container">
+                <div class="hero-title">
+                    Birds
+                </div>
+                <div class="bird-hero-text-container">
+                    Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long
+                    and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't. Birds are amazing
+                    and each breed is unique in its own way, particularly when it comes to their relational needs and well-being. 
+                </div>
+            </div>
+            <div class="content-container column-display">
+                <div class="center-container">
+                    <div class="heading-text">Well-Being</div>
+                </div>
+                <div class="center-container text-container">
+                    Unfortunately, birds can experience sadness and depression just like humans. A number of root causes may be responsible for
+                    your bird's depression such as an 
+                    <span class="bold">illness (either physical or mental), losing its companion, or increasingly becoming bored.</span>
+                    Some signs to help identify if your bird is experiencing depression may include the following:
+                    <ul>
+                        <li><span class="bold">Reduced appetite</span></li>
+                        <li><span class="bold">Becoming increasingly irritable</span></li>
+                        <li><span class="bold">Aggressive behavior</span></li>
+                        <li><span class="bold">Songs have a different, more solemn tone</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="img-container left-container">
+                    <img src="img/mf-evelyn-jvDYwv3gqNY-unsplash.jpg" alt="Love Bird">
+                </div>
+                <div class="text-container right-container">
+                    <span class="normal-text">
+                        Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating
+                        the symptoms earlier may drastically increase the lifespan of your birdie.
+                    </span>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="logo-container">
+                <img src="img/favicon.png" alt="Company Logo" class="logo">
+                <div class="footer-title">
+                    <span>Paradigm</span>
+                    <span>Pet</span>
+                    <span>Professionals</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <span>Navigation</span>
+                <a href="index.html">Home</a>
+                <a href="cats.html">Cats</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="#">Birds</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-forms">
+                <span>Forms</span>
+                <a href="consultation.html">Consultations</a>
+            </div>
+        </footer>
+        <script>
+            function showSideBar() {
+                sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+                function hideSidebar() {
+                    sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'none';
+                }
+        </script>
+    </body>
+
+</html>
